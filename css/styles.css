@@ -5,10 +5,11 @@
     --light-color-bg:#F5F5F5;
     --dark-color-footer:#2F303A;
     --white-color: #ffffff;
+    --black-color :#000000;
+    --light-grey-color: #F5F4FA;
 }
 body{
-    background-color: var(--light-color-bg);
-    color: var(--main-color-text);
+        color: var(--main-color-text);
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 400;
@@ -28,13 +29,27 @@ color: var(--white-color);
     background-color: var(--dark-color-footer);
 }
 .button {
-    background-color: var(--accent-color);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
+    line-height: 1.625;
+    color: var(-dark-color-text);
+    background-color: var(--light-grey-color);
+    font-family: inherit;
+    border: none;
+}
+.main-button{
+    background-color: var(--accent-color);
     color: var(--white-color);
+    Font style: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    }
+.button:active, .button:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color-text);
+}
+a.primery-link{
+color: var(--accent-color);
 }
 /* Визначає характеристики блоку переваг */
 .visually-hidden { 
@@ -60,6 +75,9 @@ color: var(--white-color);
     line-height: 1.171;
    }
    /* Визначає характеристики секції "Чим ми займаємося" */
+   .team{
+    background-color: var(--light-grey-color);
+   }
    .title {
        font-weight: 700;
        font-size: 36px;
@@ -96,7 +114,7 @@ font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-color: #000000;
+color: var(--black-color);
 }
 .logo-footer {
     color: var(--white-color)
