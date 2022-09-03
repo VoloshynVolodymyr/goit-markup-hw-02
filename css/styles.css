@@ -1,164 +1,208 @@
-:root{
-    --main-color-text:#757575;
-    --dark-color-text:#212121;
-    --accent-color:#2196F3;
-    --light-color-bg:#F5F5F5;
-    --dark-color-footer:#2F303A;
+:root {
+    --main-color-text: #757575;
+    --dark-color-text: #212121;
+    --accent-color: #2196F3;
+    --light-color-bg: #F5F5F5;
+    --dark-color-footer: #2F303A;
     --white-color: #ffffff;
-    --black-color :#000000;
+    --black-color: #000000;
     --light-grey-color: #F5F4FA;
 }
-body{
-        color: var(--main-color-text);
+
+body {
+    color: var(--main-color-text);
     font-family: "Roboto";
     font-size: 14px;
-    font-weight: 400;
     letter-spacing: 0.03em;
 }
+
 /* Визначає характеристики героя */
-h1{
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--white-color);
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
 }
-.hero{
+
+.hero {
     background-color: var(--dark-color-footer);
 }
+
 .button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
-    color: var(-dark-color-text);
+    color: var(--dark-color-text);
     background-color: var(--light-grey-color);
     font-family: inherit;
     border: none;
+    cursor: pointer;
 }
-.main-button{
+
+.main-button {
     background-color: var(--accent-color);
     color: var(--white-color);
-    Font style: 700;
+    /* font-style: 700; */
     line-height: 1.88;
     letter-spacing: 0.06em;
-    }
-.button:active, .button:hover {
+}
+
+.button:active,
+.button:hover {
     background-color: var(--accent-color);
-    color: var(--dark-color-text);
+    color: var(--white-color);
 }
-a.primery-link{
-color: var(--accent-color);
+
+a.primery-link {
+    color: var(--accent-color);
 }
+
+button.primery-link {
+    background-color: var(--accent-color);
+    color: var(--white-color)
+}
+
 /* Визначає характеристики блоку переваг */
-.visually-hidden { 
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    margin: -1px; 
-    border: 0; 
-    padding: 0; 
-    white-space: nowrap; 
-    clip-path: inset(100%); 
-    clip: rect(0 0 0 0); 
-    overflow: hidden; 
-  }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .advantages-title {
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--dark-color-text);
 }
-.advantages-descr{
+
+.advantages-descr {
     line-height: 1.171;
-   }
-   /* Визначає характеристики секції "Чим ми займаємося" */
-   .team{
+}
+
+/* Визначає характеристики секції "Чим ми займаємося" */
+.team {
     background-color: var(--light-grey-color);
-   }
-   .title {
-       font-weight: 700;
-       font-size: 36px;
-       line-height: 1.167;
-       color: var(--dark-color-text);
-   }
-   .title-name {
-       font-weight: 500;
-       font-size: 16px;
-       line-height: 1.188;
-       text-align: center;
-       color: var(--dark-color-text);
-   }
-   .title-profession{
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.167;
+    color: var(--dark-color-text);
+}
+
+.team-name {
+    font-weight: 500;
     font-size: 16px;
-line-height: 1.188;
-text-align: center;
-   }
-footer{
+    line-height: 1.188;
+    text-align: center;
+    color: var(--dark-color-text);
+}
+
+.team-position {
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+}
+
+footer {
     background-color: var(--dark-color-footer);
 }
-address{
+
+address {
     font-style: normal;
 }
-a{
-        text-decoration: none;
-   }
-li{
+
+a {
+    text-decoration: none;
+}
+
+li {
     list-style-type: none
 }
+
 /* Визначає характеристики логотипу */
-.logo, .logo-footer{
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-color: var(--black-color);
+.logo,
+.logo-footer {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--black-color);
 }
+
 .logo-footer {
     color: var(--white-color)
 }
-.logo-accent{
+
+.logo-accent {
     color: var(--accent-color);
 }
+
 /* Визначає характеристики посилань в навігаціі */
-.nav-link{
-font-weight: 500;
-font-size: 14px;
-line-height: 0.875;
-letter-spacing: 0.02em;
-color: var(--dark-color-text);
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.875;
+    letter-spacing: 0.02em;
+    color: var(--dark-color-text);
 }
-.nav-contact{
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+.nav-contact {
     color: var(--main-color-text)
 }
-.nav-contact:hover, .nav-contact:active, .footer-link:hover, .footer-link:active, .logo:hover, .logo:active,.logo-footer:hover, .logo-footer:active{
+
+.nav-contact:hover,
+.nav-contact:active,
+.footer-link:hover,
+.footer-link:active,
+.logo:hover,
+.logo:active,
+.logo-footer:hover,
+.logo-footer:active {
     color: var(--accent-color);
 }
+
 /* Визначає характеристики посилань у футері */
-.footer-link{
-font-size: 14px;
-line-height: 1.71;
-color: rgba(255, 255, 255, 0.6);
+.footer-link {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
 }
-.address{
+
+.footer-address {
+    line-height: 1.71;
     color: var(--white-color)
 }
 
 /* Портфоліо */
-.portfolio-header{
+.portfolio-header {
     background-color: var(--white-color);
 }
-.portfolio-title{
-    font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--dark-color-text);
+
+.portfolio-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--dark-color-text);
 }
-.portfolio-descr{
+
+.portfolio-descr {
     font-size: 16px;
-line-height: 1.188;
-color: var(--main-color-text);
+    line-height: 1.188;
+    color: var(--main-color-text);
 }
